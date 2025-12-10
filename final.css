@@ -162,23 +162,31 @@ textarea {
   /* Navbar */
   .nav-container {
     flex-direction: column;
-    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
     text-align: center;
   }
 
   .brand {
     font-size: 18px;
     white-space: normal;
-    line-height: 22px;
+    line-height: 20px;
+     margin-bottom: 5px;
   }
 
   .menu {
-    flex-direction: column;
-    gap: 10px;
+      display: flex;
+      flex-direction: row;     /* FIXED */
+      flex-wrap: wrap;         /* So items stay in 1–2 lines max */
+      gap: 10px;               /* Smaller gap */
+      justify-content: center;
+      width: 100%
   }
 
   .menu a {
-    font-size: 16px;
+    font-size: 15px;
+    padding:3px 6px;
   }
 
   /* Hero */
@@ -193,3 +201,4 @@ textarea {
     grid-template-columns: 1fr;
   }
 }
+
