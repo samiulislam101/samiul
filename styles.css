@@ -1,0 +1,107 @@
+:root{--primary:#009107;--muted:#6b7280}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*{box-sizing:border-box}
+
+body{font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.6;margin:0;background:#ffffff;color:#000000}/*body*/
+
+
+.nav {
+    background: rgb(255, 255, 255);
+    box-shadow: 0 1px 4px #1eff00;
+    position: sticky;
+    top: 0;
+    z-index: 50;        /*barnd and menu bar */
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 2px solid white;
+}
+
+.nav-container {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.brand {
+    font-size: 22px;
+    font-weight: 900;
+    color: rgb(0, 117, 8);      /* brand name*/
+    white-space: nowrap;
+}
+.logo{
+   margin-left: auto;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;      /*menu bar*/
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: blue;            /*menu front */
+}
+
+.hero{display:flex;gap:24px;align-items:right; padding:50px 0} /*logo*/
+
+.hero-text h1{font-size:28px;margin:0 0 12px}
+
+.hero-text p{color:var(--muted);margin:0 0 18px}
+
+.card img {
+    width: 100%;
+    height: auto;        /*border*/
+    object-fit: contain;            
+    display: block;
+
+}
+.container{max-width:1100px;margin:0 auto; height: 100%;}/*exterior*/
+
+.container2 {max-width:1100px;margin:0 auto; height:auto;}/*interior*/
+
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;text-decoration:none;border:300px solid rgb(255, 0, 0)}       /*contacrus and ourservice btn*/
+
+.btn.primary{background:var(--primary);color:#ffffff;border:none}       /*btn front color*/
+
+.card{background:#ffffff;padding:24px;border-radius:12px;box-shadow:0 6px 18px rgb(1, 147, 1);margin-bottom:20px}       /*card color*/
+
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:25px} /*card setting*/
+
+input[type=text],input[type=email],select,textarea{width:100%;padding:10px;border:1px solid #00e4fd;border-radius:8px}/*from*/
+
+.footer{background:#00014f;padding:18px;margin-top:24px;text-align:center;color:var(--muted); display: flex; gap: 10px;}/*footer*/
+.footer-p {
+    
+    margin: 0;
+    color: rgb(255, 255, 255); /* আপনার footer যেটা */
+}
+.location {
+    height: 20px;   /* সাইজ পরিবর্তন করুন */
+    width: auto;     /* ratio ঠিক রাখবে */
+
+}
+.phone{
+    height: 20px;   /* সাইজ পরিবর্তন করুন */
+    width: auto;
+}
+.gmail{
+    height: 20px;
+    width: auto;
+}
+.facebook{
+    height: 20px;
+    width: auto;
+}
+@media (max-width:900px){
+  .hero{flex-direction:column}
+  .grid-3{grid-template-columns:1fr}
+  .nav nav{display:none}
+}
