@@ -42,7 +42,11 @@ body {
   color: rgb(0, 117, 8);
   white-space: nowrap;
 }
-
+.logo {
+  
+    width: 150px;
+    margin-left:400px;
+}
 .menu {
   display: flex;
   gap: 25px;
@@ -197,3 +201,4 @@ textarea {
     grid-template-columns: 1fr;
   }
 }
+
